@@ -11,6 +11,9 @@ import { MyMapperComponent } from './my-mapper/my-mapper.component';
 import { MyOriginFileComponent } from './my-origin-file/my-origin-file.component';
 import { MyOlsComponent } from './my-ols/my-ols.component';
 import { PageheaderComponent } from './pageheader/pageheader.component';
+import { LoginComponent } from './Authorize/login/login.component';
+import { RegisterComponent } from './Authorize/register/register.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { PageheaderComponent } from './pageheader/pageheader.component';
     MyMapperComponent,
     MyOriginFileComponent,
     MyOlsComponent,
-    PageheaderComponent
+    PageheaderComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

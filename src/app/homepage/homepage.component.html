@@ -1,43 +1,16 @@
-<div class="xs-pd-20-10 pd-ltr-20">
-    <div class="row clearfix progress-box">
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-            <div class="card-box pd-30 height-100-p" style="background-color: rgba(53,132,181)">
-                <div class="progress-box text-center">
-                    <img src="../../assets/pngs/sendfile.png" style="display: block;margin-left: auto;margin-right: auto;width: 40%;;">
-                    <h5 class="text-blue padding-top-10 h5">
-                        <a style="color: white;" routerLink="/sendfile">Send File</a>
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-            <div class="card-box pd-30 height-100-p" style="background-color: rgba(53,132,181)">
-                <div class="progress-box text-center">
-                    <img src="../../assets/pngs/mapper.png" style="display: block;margin-left: auto;margin-right: auto;width: 40%;;">
-                    <h5 class="text-light-green padding-top-10 h5">
-                        <a routerLink="mymapper" style="color: white;">My Mapper</a>
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-            <div class="card-box pd-30 height-100-p" style="background-color: rgba(53,132,181)">
-                <img src="../../assets/pngs/file.png" style="display: block;margin-left: auto;margin-right: auto;width: 40%;;">
-                <div class="progress-box text-center">
-                    <h5 class="text-light-orange padding-top-10 h5"><a routerLink="/myorigin" style="color: white;">My
-                        Origin File</a>
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-            <div class="card-box pd-30 height-100-p" style="background-color: rgba(53,132,181)">
-                <div class="progress-box text-center">
-                    <img src="../../assets/pngs/speedometer.png" style="display: block;margin-left: auto;margin-right: auto;width: 40%;;">
-                    <h5 class="text-light-purple padding-top-10 h5"><a routerLink="/myols" style="color: white;">My OLS
-                        Script</a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+<app-header></app-header>
+<app-left-side></app-left-side>
+
+
+
+<div class="main-container">
+    <app-pageheader></app-pageheader>
+
+    <router-outlet></router-outlet>
+</div>
+
+
+
+
