@@ -1,1 +1,113 @@
-<p>register works!</p>
+<div class="login-header box-shadow">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="brand-logo">
+            <a href="login.html">
+                <img src="../../assets/vendors/images/deskapp-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="login-menu">
+            <ul>
+                <li><a routerLink="/login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="register-page-wrap d-flex align-items-center flex-wrap justify-content-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-7">
+                <img src="../../assets/vendors/images/register-page-img.png" alt="">
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="register-box bg-white box-shadow border-radius-10" style="width: 1000px; margin-top: 10px;">
+                    <div class="wizard-content">
+                        <form class="tab-wizard2 wizard-circle wizard">
+                            <div class="form-wrap max-width-400 mx-auto" style="width: 500px; margin-top: 20px;">
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Company Name"
+                                            [(ngModel)]="user.CompanyName" name="CompanyName">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Name"
+                                            [(ngModel)]="user.Name" name="Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-3">
+                                        <input type="text" placeholder="EVC" class="form-control"
+                                            [(ngModel)]="user.EVC" name="EVC">
+                                    </div>
+                                    <div class="col-sm-3" style="margin-left:-4%;">
+                                        <input type="text" placeholder="Tax" class="form-control"
+                                            [(ngModel)]="user.TaxCode" name="Tax">
+                                    </div>
+                                    <div class="col-sm-3" style="margin-left:-4%;">
+                                        <input type="text" placeholder="Phone" class="form-control"
+                                            [(ngModel)]="user.Phone" name="Phone">
+                                    </div>
+                                    <div class="col-sm-4" style="margin-left:-4%;">
+                                        <input type="text" placeholder="SkypeID" class="form-control"
+                                            [(ngModel)]="user.SkypeID" name="Skype">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <input type="text" placeholder="Email" class="form-control"
+                                            [(ngModel)]="user.Email" name="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <input type="text" placeholder="Address" class="form-control"
+                                            [(ngModel)]="user.Address" name="Address">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <input type="password" placeholder="Password" class="form-control"
+                                            [(ngModel)]="user.Address" name="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="float: right;">
+                                    <div class="col-sm-8">
+                                        <button class="button" (click)="Register()">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- success Popup html Start -->
+<button type="button" id="success-modal-btn" hidden data-toggle="modal" data-target="#success-modal"
+    data-backdrop="static">Launch modal</button>
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-width-400" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center font-18">
+                <h3 class="mb-20">Form Submitted!</h3>
+                <div class="mb-30 text-center"><img src="../../assets/vendors/images/success.png"></div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </div>
+            <div class="modal-footer justify-content-center">
+                <a href="login.html" class="btn btn-primary">Done</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- success Popup html End -->
+<!-- js -->
+<script src="../../assets/vendors/scripts/core.js"></script>
+<script src="../../assets/vendors/scripts/script.min.js"></script>
+<script src="../../assets/vendors/scripts/process.js"></script>
+<script src="../../assets/vendors/scripts/layout-settings.js"></script>
+<script src="../../assets/src/plugins/jquery-steps/jquery.steps.js"></script>
+<script src="../../assets/vendors/scripts/steps-setting.js"></script>

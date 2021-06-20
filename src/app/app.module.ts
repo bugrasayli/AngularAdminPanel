@@ -14,6 +14,9 @@ import { PageheaderComponent } from './pageheader/pageheader.component';
 import { LoginComponent } from './Authorize/login/login.component';
 import { RegisterComponent } from './Authorize/register/register.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
